@@ -1,0 +1,11 @@
+<!--index.wxml-->
+<view class="page">
+  <button type="primary" open-type="share">分享好友</button>
+  <button type="primary" bind:tap="downloadShareImage">分享朋友圈</button>
+  <!-- 分享卡片 -->
+  <view style="position: absolute;top:150px;left: 0;">卡片图：</view>
+  <canvas canvas-id="card" style="width: 420px;height: 336px;position: absolute;top:180px;left: 0;"></canvas>
+  <!-- 朋友圈大图 -->
+  <view style="position: absolute;top:530px;left: 0;">海报图：</view>
+  <canvas canvas-id="image" style="width: 750px;height: 1334px;position: absolute;top:560px;left: 0;"></canvas>
+</view>
